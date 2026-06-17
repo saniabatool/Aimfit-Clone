@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import GetFitHome from "./components/GetFitHome";
-import OwnStudio from "./components/OwnStudio";
+
 import PricingSection from "./components/PricingSection";
 import StudioSection from "./components/StudioSection";
 import CommunitySection from "./components/CommunitySection";
@@ -27,7 +27,7 @@ function App() {
       <Navbar />
       <Hero />
       <GetFitHome />
-      <OwnStudio />
+
       <PricingSection />
       <StudioSection />
       <CommunitySection />
