@@ -1,0 +1,1197 @@
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+  max-width: 1200px;
+  margin: 0 auto 620px;
+  padding: 20px;
+  position: relative;
+}
+
+.hero-slide {
+  height: 720px;
+  border-radius: 25px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.hero-content {
+  margin-top: -80px;
+   padding-left: 70px;
+  padding-top: 140px;
+}
+.overlay {
+  display: flex;
+  align-items: flex-start;
+}
+
+.hero-content {
+  padding-left: 70px;
+  padding-top: 140px;
+}
+
+.hero-content {
+  color: white;
+  max-width: 600px;
+  padding-left: 70px;
+}
+
+.hero-content h1 {
+  font-size: 72px;
+  font-weight: 300;
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  background: #ff3f86;
+  color: white;
+  border: none;
+
+  padding: 18px 42px;
+  border-radius: 999px;
+
+  font-size: 20px;
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* =========================
+   FLOATING CARDS LAYOUT
+========================= */
+
+.floating-cards{
+  position:absolute;
+  bottom:-280px;
+  left:50%;
+  transform:translateX(-50%);
+
+  width:95%;
+
+  display:grid;
+  grid-template-columns:
+    repeat(4,minmax(220px,1fr));
+
+  gap:20px;
+
+  z-index:100;
+}
+
+.booking-card,
+.calendar-card,
+.app-card,
+.mini-card {
+  background: white;
+  border-radius: 20px;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+
+  transition: all 0.3s ease;
+}
+
+.booking-card:hover,
+.calendar-card:hover,
+.app-card:hover,
+.mini-card:hover {
+  transform: translateY(-5px);
+}
+.booking-card,
+.mini-card,
+.calendar-card,
+.app-card{
+  width:100%;
+}
+
+/* =========================
+   BOOKING CARD
+========================= */
+
+.booking-card {
+  width: 340px;
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h3 {
+  font-size: 30px;
+  color: #222;
+}
+
+.level-badge {
+  width: 34px;
+  height: 34px;
+
+  border: 3px solid #8bc34a;
+  border-radius: 50%;
+
+  color: #8bc34a;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.card-description {
+  color: #8d8d8d;
+  line-height: 1.8;
+}
+
+.booking-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: #444;
+}
+
+.booking-dropdown {
+  height: 48px;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 15px;
+}
+
+.book-btn {
+  width: 100%;
+  height: 52px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #ff3f86;
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+/* =========================
+   CLASS STACK
+========================= */
+
+.class-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  margin-top: 120px;
+}
+
+.mini-card {
+  width: 340px;
+  padding: 18px;
+
+  border: 1px solid #efefef;
+}
+
+.mini-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.mini-card-header h4 {
+  font-size: 22px;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+.class-type {
+  color: #999;
+  font-size: 14px;
+}
+
+.mini-badge {
+  width: 34px;
+  height: 34px;
+
+  border: 3px solid #8bc34a;
+  border-radius: 50%;
+
+  color: #8bc34a;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.mini-card-footer {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  margin-top: 15px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #777;
+  font-size: 14px;
+}
+
+/* =========================
+   CALENDAR CARD
+========================= */
+
+.calendar-card {
+  width: 340px;
+  min-height: 400px;
+
+  padding: 24px;
+  margin-top: 70px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.calendar-header h3 {
+  color: #333;
+  font-size: 28px;
+}
+
+.calendar-nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  color: #ff3f86;
+  font-weight: 600;
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+
+  text-align: center;
+
+  margin-bottom: 15px;
+
+  color: #999;
+  font-size: 14px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+
+  gap: 10px;
+}
+
+.day {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.day:hover {
+  background: #f4f4f4;
+}
+
+.active-day {
+  background: #ff3f86;
+  color: white;
+  font-weight: 600;
+}
+
+/* =========================
+   APP CARD
+========================= */
+
+.app-card {
+  width: 300px;
+  height: 560px;
+
+  padding: 20px;
+
+  border-radius: 30px;
+
+  margin-top: -30px;
+  margin-left: 10px;
+
+  overflow: hidden;
+}
+
+.phone-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: #bbb;
+  font-size: 13px;
+
+  margin-bottom: 20px;
+}
+
+.app-card h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.workout-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.workout-item {
+  display: flex;
+  gap: 12px;
+}
+
+.workout-item img {
+  width: 110px;
+  height: 70px;
+
+  object-fit: cover;
+
+  border-radius: 12px;
+}
+
+.workout-content {
+  flex: 1;
+}
+
+.workout-content h4 {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.workout-content p {
+  font-size: 13px;
+  color: #888;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+/* =========================
+   TABLET
+========================= */
+
+
+@media (max-width:1200px){
+
+  .hero{
+    margin-bottom:750px;
+  }
+
+  .hero-slide{
+    height:620px;
+  }
+
+  .hero-content{
+    padding-left:50px;
+    padding-top:110px;
+    max-width:500px;
+  }
+
+  .hero-content h1{
+    font-size:58px;
+  }
+
+  .hero-content p{
+    font-size:20px;
+  }
+
+  .floating-cards{
+    position:absolute;
+    bottom:-650px;
+
+    left:50%;
+    transform:translateX(-50%);
+
+    width:95%;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+  }
+
+  .booking-card,
+  .calendar-card,
+  .mini-card,
+  .app-card{
+    width:100%;
+    max-width:none;
+    margin:0;
+  }
+
+  .calendar-card,
+  .app-card,
+  .class-stack{
+    margin-top:0;
+  }
+
+  .app-card{
+    height:auto;
+    min-height:auto;
+  }
+}
+@media (max-width:1024px){
+
+  .hero{
+    margin-bottom:60px;
+  }
+
+  .floating-cards{
+    display:none;
+  }
+
+  .hero-slide{
+    height:600px;
+  }
+
+  .hero-content{
+    padding-left:40px;
+    padding-top:100px;
+  }
+
+  .hero-content h1{
+    font-size:48px;
+  }
+
+  .hero-content p{
+    font-size:18px;
+  }
+}
+@media (max-width:992px){
+
+  .hero{
+    margin-bottom:900px;
+  }
+
+  .hero-slide{
+    height:560px;
+  }
+
+  .hero-content{
+    padding-left:35px;
+    padding-top:90px;
+  }
+
+  .hero-content h1{
+    font-size:46px;
+  }
+
+  .hero-content p{
+    font-size:18px;
+  }
+
+  .floating-cards{
+    bottom:-800px;
+
+    display:grid;
+    grid-template-columns:1fr;
+
+    gap:20px;
+  }
+}
+/* =========================
+   MOBILE
+========================= */
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:768px){
+
+  .hero{
+    margin-bottom:60px;
+    padding:15px;
+  }
+
+  .hero-slide{
+    height:500px;
+  }
+
+  .hero-content{
+    margin-top:0;
+    padding:60px 20px 20px;
+    max-width:100%;
+  }
+
+  .hero-content h1{
+    font-size:34px;
+    line-height:1.2;
+  }
+
+  .hero-content p{
+    font-size:16px;
+    margin-bottom:20px;
+  }
+
+  .hero-btn{
+    padding:14px 28px;
+    font-size:16px;
+  }
+
+  .floating-cards{
+    display:none;
+  }
+}
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width:480px){
+
+  .hero-slide{
+    height:420px;
+  }
+
+  .hero-content{
+    padding:40px 15px 15px;
+  }
+
+  .hero-content h1{
+    font-size:28px;
+  }
+
+  .hero-content p{
+    font-size:14px;
+  }
+
+  .hero-btn{
+    width:100%;
+  }
+}please check n fix/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+  max-width: 1200px;
+  margin: 0 auto 620px;
+  padding: 20px;
+  position: relative;
+}
+
+.hero-slide {
+  height: 720px;
+  border-radius: 25px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.hero-content {
+  margin-top: -80px;
+   padding-left: 70px;
+  padding-top: 140px;
+}
+.overlay {
+  display: flex;
+  align-items: flex-start;
+}
+
+.hero-content {
+  padding-left: 70px;
+  padding-top: 140px;
+}
+
+.hero-content {
+  color: white;
+  max-width: 600px;
+  padding-left: 70px;
+}
+
+.hero-content h1 {
+  font-size: 72px;
+  font-weight: 300;
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  background: #ff3f86;
+  color: white;
+  border: none;
+
+  padding: 18px 42px;
+  border-radius: 999px;
+
+  font-size: 20px;
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* =========================
+   FLOATING CARDS LAYOUT
+========================= */
+
+.floating-cards{
+  position:absolute;
+  bottom:-280px;
+  left:50%;
+  transform:translateX(-50%);
+
+  width:95%;
+
+  display:grid;
+  grid-template-columns:
+    repeat(4,minmax(220px,1fr));
+
+  gap:20px;
+
+  z-index:100;
+}
+
+.booking-card,
+.calendar-card,
+.app-card,
+.mini-card {
+  background: white;
+  border-radius: 20px;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+
+  transition: all 0.3s ease;
+}
+
+.booking-card:hover,
+.calendar-card:hover,
+.app-card:hover,
+.mini-card:hover {
+  transform: translateY(-5px);
+}
+
+/* =========================
+   BOOKING CARD
+========================= */
+
+.booking-card {
+  width: 340px;
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h3 {
+  font-size: 30px;
+  color: #222;
+}
+
+.level-badge {
+  width: 34px;
+  height: 34px;
+
+  border: 3px solid #8bc34a;
+  border-radius: 50%;
+
+  color: #8bc34a;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.card-description {
+  color: #8d8d8d;
+  line-height: 1.8;
+}
+
+.booking-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: #444;
+}
+
+.booking-dropdown {
+  height: 48px;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 15px;
+}
+
+.book-btn {
+  width: 100%;
+  height: 52px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #ff3f86;
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+/* =========================
+   CLASS STACK
+========================= */
+
+.class-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  margin-top: 120px;
+}
+
+.mini-card {
+  width: 340px;
+  padding: 18px;
+
+  border: 1px solid #efefef;
+}
+
+.mini-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.mini-card-header h4 {
+  font-size: 22px;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+.class-type {
+  color: #999;
+  font-size: 14px;
+}
+
+.mini-badge {
+  width: 34px;
+  height: 34px;
+
+  border: 3px solid #8bc34a;
+  border-radius: 50%;
+
+  color: #8bc34a;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.mini-card-footer {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  margin-top: 15px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #777;
+  font-size: 14px;
+}
+
+/* =========================
+   CALENDAR CARD
+========================= */
+
+.calendar-card {
+  width: 340px;
+  min-height: 400px;
+
+  padding: 24px;
+  margin-top: 70px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.calendar-header h3 {
+  color: #333;
+  font-size: 28px;
+}
+
+.calendar-nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  color: #ff3f86;
+  font-weight: 600;
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+
+  text-align: center;
+
+  margin-bottom: 15px;
+
+  color: #999;
+  font-size: 14px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+
+  gap: 10px;
+}
+
+.day {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.day:hover {
+  background: #f4f4f4;
+}
+
+.active-day {
+  background: #ff3f86;
+  color: white;
+  font-weight: 600;
+}
+
+/* =========================
+   APP CARD
+========================= */
+
+.app-card {
+  width: 300px;
+  height: 560px;
+
+  padding: 20px;
+
+  border-radius: 30px;
+
+  margin-top: -30px;
+  margin-left: 10px;
+
+  overflow: hidden;
+}
+
+.phone-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: #bbb;
+  font-size: 13px;
+
+  margin-bottom: 20px;
+}
+
+.app-card h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.workout-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.workout-item {
+  display: flex;
+  gap: 12px;
+}
+
+.workout-item img {
+  width: 110px;
+  height: 70px;
+
+  object-fit: cover;
+
+  border-radius: 12px;
+}
+
+.workout-content {
+  flex: 1;
+}
+
+.workout-content h4 {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.workout-content p {
+  font-size: 13px;
+  color: #888;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+/* =========================
+   TABLET
+========================= */
+
+
+@media (max-width:1200px){
+
+  .hero{
+    margin-bottom:300px;
+  }
+
+  .hero-slide{
+    height:620px;
+  }
+
+  .hero-content{
+    padding-left:50px;
+    padding-top:110px;
+    max-width:500px;
+  }
+
+  .hero-content h1{
+    font-size:58px;
+  }
+
+  .hero-content p{
+    font-size:20px;
+  }
+
+  .floating-cards{
+    bottom:-220px;
+
+    width:95%;
+
+    display:grid;
+
+    grid-template-columns:
+      repeat(2,minmax(280px,1fr));
+
+    gap:20px;
+  }
+
+  .booking-card,
+  .calendar-card,
+  .mini-card,
+  .app-card{
+    width:100%;
+    max-width:none;
+  }
+
+  .calendar-card,
+  .app-card,
+  .class-stack{
+    margin-top:0;
+  }
+
+  .app-card{
+    margin-left:0;
+    height:auto;
+    min-height:450px;
+  }
+}
+@media (max-width:992px){
+
+  .hero{
+    margin-bottom:220px;
+  }
+
+  .hero-slide{
+    height:560px;
+  }
+
+  .hero-content{
+    padding-left:35px;
+    padding-top:90px;
+  }
+
+  .hero-content h1{
+    font-size:46px;
+  }
+
+  .hero-content p{
+    font-size:18px;
+  }
+
+  .floating-cards{
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    bottom:-180px;
+  }
+
+  .card-header h3,
+  .calendar-header h3,
+  .app-card h3{
+    font-size:24px;
+  }
+}
+/* =========================
+   MOBILE
+========================= */
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:768px){
+
+  .hero{
+    margin-bottom:60px;
+    padding:15px;
+  }
+
+  .hero-slide{
+    height:500px;
+  }
+
+  .hero-content{
+    margin-top:0;
+    padding:60px 20px 20px;
+    max-width:100%;
+  }
+
+  .hero-content h1{
+    font-size:34px;
+    line-height:1.2;
+  }
+
+  .hero-content p{
+    font-size:16px;
+    margin-bottom:20px;
+  }
+
+  .hero-btn{
+    padding:14px 28px;
+    font-size:16px;
+  }
+
+  .floating-cards{
+    display:none;
+  }
+}
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width:480px){
+
+  .hero-slide{
+    height:420px;
+  }
+
+  .hero-content{
+    padding:40px 15px 15px;
+  }
+
+  .hero-content h1{
+    font-size:28px;
+  }
+
+  .hero-content p{
+    font-size:14px;
+  }
+
+  .hero-btn{
+    width:100%;
+  }
+}
+@media (max-width:1024px){
+
+  .hero{
+    margin-bottom:60px;
+  }
+
+  .floating-cards{
+    display:none;
+  }
+}

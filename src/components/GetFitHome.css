@@ -1,0 +1,237 @@
+.get-fit-home{
+  max-width:1200px;
+  margin:120px auto;
+  padding:0 20px;
+
+  padding-top:120px;
+  margin-top:-120px;
+}
+
+/* HEADING */
+
+.section-heading{
+  text-align:center;
+  margin-bottom:100px;
+}
+
+.section-heading h2{
+  font-size:58px;
+  font-weight:500;
+  line-height:1.2;
+  color:#111;
+}
+
+/* GRID */
+
+.getfit-container{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:80px;
+  align-items:center;
+}
+
+.reverse,
+.third-block,
+.fourth-block{
+  margin-top:180px;
+}
+
+/* CONTENT */
+
+.getfit-content h3{
+  font-size:48px;
+  line-height:1.2;
+  margin-bottom:25px;
+  color:#111;
+}
+
+.getfit-content p{
+  font-size:20px;
+  color:#666;
+  line-height:1.8;
+}
+
+/* PHONE IMAGE */
+
+.phone-container{
+  display:flex;
+  justify-content:center;
+}
+
+.phone-container img{
+  width:100%;
+  max-width:420px;
+
+  animation:floatPhone 4s ease-in-out infinite;
+}
+
+/* WORKOUT IMAGE */
+
+.workout-image{
+  overflow:hidden;
+  border-radius:24px;
+}
+
+.workout-image img{
+  width:100%;
+  display:block;
+
+  transition:transform .6s ease;
+}
+
+.workout-image:hover img{
+  transform:scale(1.05);
+}
+
+/* FLOAT ANIMATION */
+
+@keyframes floatPhone{
+
+  0%{
+    transform:translateY(0);
+  }
+
+  50%{
+    transform:translateY(-12px);
+  }
+
+  100%{
+    transform:translateY(0);
+  }
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media(max-width:1024px){
+
+  .get-fit-home{
+    margin:100px auto;
+  }
+
+  .section-heading{
+    margin-bottom:70px;
+  }
+
+  .section-heading h2{
+    font-size:46px;
+  }
+
+  .getfit-container{
+    grid-template-columns:1fr;
+    gap:60px;
+  }
+
+  .reverse,
+  .third-block,
+  .fourth-block{
+    margin-top:120px;
+  }
+
+  .getfit-content{
+    text-align:center;
+    max-width:700px;
+    margin:auto;
+  }
+
+  .getfit-content h3{
+    font-size:38px;
+  }
+
+  .getfit-content p{
+    font-size:18px;
+  }
+
+  .phone-container{
+    order:-1;
+  }
+
+  .phone-container img{
+    max-width:360px;
+  }
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media(max-width:768px){
+
+  .get-fit-home{
+    margin:70px auto;
+    padding:0 15px;
+
+    padding-top:90px;
+    margin-top:-90px;
+  }
+
+  .section-heading{
+    margin-bottom:40px;
+  }
+
+  .section-heading h2{
+    font-size:32px;
+    line-height:1.3;
+  }
+
+  .getfit-container{
+    gap:35px;
+  }
+
+  .reverse,
+  .third-block,
+  .fourth-block{
+    margin-top:70px;
+  }
+
+  .getfit-content{
+    text-align:center;
+  }
+
+  .getfit-content h3{
+    font-size:28px;
+    margin-bottom:15px;
+  }
+
+  .getfit-content p{
+    font-size:16px;
+    line-height:1.7;
+  }
+
+  .phone-container img{
+    max-width:280px;
+  }
+
+  .workout-image{
+    border-radius:18px;
+  }
+}
+/* ========================= */
+/* SMALL PHONES */
+/* ========================= */
+
+@media(max-width:480px){
+
+  .section-heading h2{
+    font-size:26px;
+  }
+
+  .getfit-content h3{
+    font-size:22px;
+  }
+
+  .getfit-content p{
+    font-size:15px;
+  }
+
+  .phone-container img{
+    max-width:220px;
+  }
+
+  .reverse,
+  .third-block,
+  .fourth-block{
+    margin-top:50px;
+  }
+}

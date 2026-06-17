@@ -1,0 +1,229 @@
+.community-section{
+  max-width:1400px;
+  margin:120px auto;
+  padding:0 20px;
+
+  position:relative;
+
+  padding-top:120px;
+  margin-top:-120px;
+
+  scroll-margin-top:100px;
+}
+
+/* HEADER */
+
+.community-header{
+  margin-bottom:50px;
+}
+
+.community-header h2{
+  font-size:clamp(30px,5vw,64px);
+  line-height:1.1;
+  color:#111;
+}
+
+.community-header span{
+  color:#ff3f86;
+}
+
+.community-header p{
+  color:#8d8d8d;
+  font-size:clamp(14px,2vw,22px);
+  margin-top:15px;
+}
+
+/* TESTIMONIAL CARD */
+
+.testimonial-card{
+  background:#f4f4f4;
+  border-radius:20px;
+
+  padding:24px;
+  min-height:260px;
+
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease;
+}
+
+.testimonial-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.testimonial-text{
+  font-size:18px;
+  line-height:1.8;
+  color:#222;
+}
+
+.testimonial-user{
+  display:flex;
+  align-items:center;
+  gap:12px;
+
+  margin-top:25px;
+}
+
+.testimonial-user img{
+  width:60px;
+  height:60px;
+
+  border-radius:50%;
+  object-fit:cover;
+}
+
+.testimonial-user h4{
+  margin:0;
+  font-size:18px;
+}
+
+.testimonial-user p{
+  margin:0;
+  color:#777;
+  font-size:14px;
+}
+
+/* =========================
+   LARGE LAPTOPS
+========================= */
+
+@media (max-width:1200px){
+
+  .community-section{
+    margin:100px auto;
+  }
+
+  .community-header h2{
+    font-size:50px;
+  }
+
+  .community-header p{
+    font-size:20px;
+  }
+}
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width:992px){
+
+  .community-section{
+    margin:80px auto;
+    padding:0 20px;
+  }
+
+  .community-header{
+    text-align:center;
+    margin-bottom:40px;
+  }
+
+  .community-header h2{
+    font-size:40px;
+  }
+
+  .community-header p{
+    font-size:18px;
+  }
+
+  .testimonial-card{
+    min-height:auto;
+    padding:22px;
+  }
+
+  .testimonial-text{
+    font-size:16px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:768px){
+
+  .community-section{
+    margin:60px auto;
+    padding:0 15px;
+  }
+
+  .community-header{
+    text-align:center;
+    margin-bottom:25px;
+  }
+
+  .community-header h2{
+    font-size:32px;
+    line-height:1.2;
+  }
+
+  .community-header p{
+    font-size:15px;
+  }
+
+  .testimonial-card{
+    padding:18px;
+    border-radius:16px;
+  }
+
+  .testimonial-text{
+    font-size:15px;
+    line-height:1.7;
+  }
+
+  .testimonial-user{
+    margin-top:18px;
+  }
+
+  .testimonial-user img{
+    width:50px;
+    height:50px;
+  }
+
+  .testimonial-user h4{
+    font-size:15px;
+  }
+}
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width:480px){
+
+  .community-header h2{
+    font-size:26px;
+  }
+
+  .community-header p{
+    font-size:14px;
+  }
+
+  .testimonial-card{
+    padding:15px;
+  }
+
+  .testimonial-text{
+    font-size:14px;
+    line-height:1.6;
+  }
+
+  .testimonial-user{
+    gap:8px;
+  }
+
+  .testimonial-user img{
+    width:42px;
+    height:42px;
+  }
+
+  .testimonial-user h4{
+    font-size:14px;
+  }
+
+  .testimonial-user p{
+    font-size:12px;
+  }
+}

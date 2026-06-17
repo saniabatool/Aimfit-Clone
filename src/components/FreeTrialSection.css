@@ -1,0 +1,272 @@
+.trial-section{
+  max-width:1200px;
+  margin:120px auto;
+  padding:0 20px;
+
+  padding-top:120px;
+  margin-top:-120px;
+
+  scroll-margin-top:100px;
+}
+
+.trial-container{
+  background:#fdf0f6;
+
+  border-radius:30px;
+
+  padding:70px;
+
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+
+  position:relative;
+  overflow:hidden;
+}
+
+.trial-container::before{
+  content:"";
+  position:absolute;
+  inset:0;
+
+  background:repeating-linear-gradient(
+    60deg,
+    rgba(255,63,134,.06),
+    rgba(255,63,134,.06) 10px,
+    transparent 10px,
+    transparent 90px
+  );
+
+  pointer-events:none;
+}
+
+.trial-content,
+.trial-form{
+  position:relative;
+  z-index:2;
+}
+
+.trial-content h2{
+  font-size:60px;
+  line-height:1.1;
+  margin-bottom:30px;
+  color:#111;
+}
+
+.trial-content p{
+  font-size:20px;
+  line-height:1.8;
+  color:#444;
+}
+
+.trial-form{
+  display:flex;
+  flex-direction:column;
+  gap:25px;
+}
+
+.input-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.trial-form input,
+.trial-form select{
+  border:none;
+  border-bottom:1px solid #ccc;
+
+  background:transparent;
+
+  padding:15px 0;
+
+  font-size:18px;
+
+  outline:none;
+}
+
+.radio-group{
+  display:flex;
+  gap:40px;
+  margin-top:10px;
+}
+
+.radio-group label{
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  font-size:18px;
+}
+
+.trial-form button{
+  width:180px;
+  height:55px;
+
+  border:none;
+  border-radius:999px;
+
+  background:#ff3f86;
+  color:white;
+
+  font-size:18px;
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:.3s;
+}
+
+.trial-form button:hover{
+  opacity:.9;
+  transform:translateY(-2px);
+}
+
+/* =========================
+   LARGE LAPTOPS
+========================= */
+
+@media (max-width:1200px){
+
+  .trial-container{
+    padding:60px 50px;
+    gap:40px;
+  }
+
+  .trial-content h2{
+    font-size:50px;
+  }
+
+  .trial-content p{
+    font-size:18px;
+  }
+}
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width:992px){
+
+  .trial-section{
+    margin:80px auto;
+  }
+
+  .trial-container{
+    grid-template-columns:1fr;
+
+    padding:50px 40px;
+
+    gap:35px;
+  }
+
+  .trial-content{
+    text-align:center;
+  }
+
+  .trial-content h2{
+    font-size:42px;
+  }
+
+  .trial-content p{
+    font-size:17px;
+  }
+
+  .input-row{
+    grid-template-columns:1fr;
+  }
+
+  .trial-form button{
+    width:220px;
+    margin:auto;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:768px){
+
+  .trial-section{
+    margin:60px auto;
+    padding:0 15px;
+  }
+
+  .trial-container{
+    padding:35px 25px;
+    border-radius:20px;
+  }
+
+  .trial-content h2{
+    font-size:32px;
+    line-height:1.2;
+    margin-bottom:20px;
+  }
+
+  .trial-content p{
+    font-size:16px;
+    line-height:1.7;
+  }
+
+  .trial-form{
+    gap:20px;
+  }
+
+  .trial-form input,
+  .trial-form select{
+    font-size:16px;
+  }
+
+  .radio-group{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .radio-group label{
+    font-size:16px;
+  }
+
+  .trial-form button{
+    width:100%;
+    height:50px;
+    font-size:16px;
+  }
+}
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width:480px){
+
+  .trial-section{
+    padding:0 12px;
+  }
+
+  .trial-container{
+    padding:25px 18px;
+  }
+
+  .trial-content h2{
+    font-size:26px;
+  }
+
+  .trial-content p{
+    font-size:14px;
+  }
+
+  .trial-form input,
+  .trial-form select{
+    font-size:14px;
+  }
+
+  .radio-group label{
+    font-size:14px;
+  }
+
+  .trial-form button{
+    height:48px;
+    font-size:15px;
+  }
+}

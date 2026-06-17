@@ -1,0 +1,349 @@
+.pricing-section{
+  max-width:1200px;
+  margin:120px auto;
+  padding:0 20px;
+
+  padding-top:120px;
+  margin-top:-120px;
+
+  scroll-margin-top:100px;
+}
+
+.pricing-header{
+  text-align:center;
+  margin-bottom:60px;
+}
+
+.pricing-header h2{
+  font-size:54px;
+  font-weight:600;
+  color:#111;
+  margin-bottom:16px;
+}
+
+.pricing-header p{
+  font-size:20px;
+  color:#777;
+}
+
+/* TABLE */
+
+.pricing-table{
+  display:grid;
+  grid-template-columns:1.3fr 1fr;
+  gap:24px;
+  align-items:start;
+}
+
+/* FEATURES */
+
+.features-column{
+  background:#f7f7f7;
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.feature-row{
+  min-height:80px;
+
+  display:flex;
+  align-items:center;
+
+  padding:0 30px;
+
+  font-size:18px;
+  font-weight:500;
+  color:#222;
+
+  border-bottom:1px solid #ececec;
+}
+
+.feature-row:last-child{
+  border-bottom:none;
+}
+
+/* PLANS */
+
+.plans-wrapper{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
+
+.plan-card{
+  border-radius:24px;
+  overflow:hidden;
+
+  color:white;
+
+  box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease;
+}
+
+.plan-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 20px 40px rgba(0,0,0,.18);
+}
+
+/* FLOATING EFFECT */
+
+.floating-card{
+  animation:floatCard 5s ease-in-out infinite;
+}
+
+.floating-card-delay{
+  animation:floatCard 5s ease-in-out infinite;
+  animation-delay:2s;
+}
+
+@keyframes floatCard{
+  0%{
+    transform:translateY(0);
+  }
+
+  50%{
+    transform:translateY(-10px);
+  }
+
+  100%{
+    transform:translateY(0);
+  }
+}
+
+/* LIVE CARD */
+
+.live-plan{
+  background:linear-gradient(
+    135deg,
+    #ff4f93,
+    #ff2f7d
+  );
+}
+
+/* COACHING CARD */
+
+.coaching-plan{
+  background:linear-gradient(
+    135deg,
+    #e100c3,
+    #b000ff
+  );
+}
+
+.plan-card h3{
+  text-align:center;
+
+  padding:26px;
+
+  font-size:26px;
+  font-weight:600;
+
+  border-bottom:1px solid rgba(255,255,255,.2);
+}
+
+/* ROWS */
+
+.plan-row{
+  height:80px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-bottom:1px solid rgba(255,255,255,.15);
+}
+
+.plan-row:last-child{
+  border-bottom:none;
+}
+
+/* ICONS */
+
+.tick-icon{
+  font-size:22px;
+  color:white;
+}
+
+.cross-icon{
+  font-size:22px;
+  color:rgba(255,255,255,.65);
+}
+
+/* RESPONSIVE */
+
+/* =========================
+   LARGE TABLETS
+========================= */
+
+@media (max-width:1200px){
+
+  .pricing-section{
+    margin:100px auto;
+    padding:0 20px;
+  }
+
+  .pricing-header h2{
+    font-size:44px;
+  }
+
+  .pricing-header p{
+    font-size:18px;
+  }
+
+  .pricing-table{
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+
+  .plans-wrapper{
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+  }
+
+  .feature-row{
+    font-size:17px;
+  }
+}
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width:992px){
+
+  .pricing-section{
+    margin:80px auto;
+  }
+
+  .pricing-header{
+    margin-bottom:40px;
+  }
+
+  .pricing-header h2{
+    font-size:36px;
+    line-height:1.2;
+  }
+
+  .pricing-header p{
+    font-size:17px;
+  }
+
+  .pricing-table{
+    grid-template-columns:1fr;
+  }
+
+  .plans-wrapper{
+    grid-template-columns:1fr 1fr;
+    gap:16px;
+  }
+
+  .feature-row{
+    min-height:70px;
+    padding:0 20px;
+    font-size:15px;
+  }
+
+  .plan-card h3{
+    font-size:22px;
+    padding:20px;
+  }
+
+  .plan-row{
+    height:70px;
+  }
+
+  .tick-icon,
+  .cross-icon{
+    font-size:20px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:768px){
+
+  .pricing-section{
+    margin:60px auto;
+    padding:0 15px;
+  }
+
+  .pricing-header{
+    margin-bottom:25px;
+  }
+
+  .pricing-header h2{
+    font-size:30px;
+    line-height:1.3;
+  }
+
+  .pricing-header p{
+    font-size:15px;
+  }
+
+  /* Hide feature comparison table on mobile */
+
+  .features-column{
+    display:none;
+  }
+
+  .pricing-table{
+    display:block;
+  }
+
+  .plans-wrapper{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+  }
+
+  .plan-card{
+    width:100%;
+  }
+
+  .plan-card h3{
+    font-size:20px;
+    padding:18px;
+  }
+
+  .plan-row{
+    height:60px;
+  }
+
+  .floating-card,
+  .floating-card-delay{
+    animation:none;
+  }
+}
+@media (max-width:480px){
+
+  .pricing-header h2{
+    font-size:26px;
+  }
+
+  .pricing-header p{
+    font-size:14px;
+  }
+
+  .plan-card h3{
+    font-size:18px;
+    padding:16px;
+  }
+
+  .plan-row{
+    height:55px;
+  }
+
+  .tick-icon,
+  .cross-icon{
+    font-size:16px;
+  }
+}
+
